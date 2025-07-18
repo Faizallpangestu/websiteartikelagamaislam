@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lembaga Keuangan Syariah (Perbankan)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Desain Umum */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background: #eef2f7; /* Warna latar belakang lebih lembut */
+            color: #34495e; /* Warna teks lebih gelap */
+            scroll-behavior: smooth; /* Smooth scroll untuk navigasi */
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #0056b3 0%, #007bff 100%); /* Gradasi warna */
+            color: #ffffff;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: 'Merriweather', serif;
+            font-size: 2.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        /* Navigasi */
+        nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex; /* Menggunakan flexbox untuk penataan */
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Transisi halus */
+        }
+
+        nav ul li a:hover, nav ul li a:focus {
+            background-color: rgba(255, 255, 255, 0.2); /* Efek hover lebih halus */
+            transform: translateY(-2px); /* Sedikit naik saat di-hover */
+        }
+
+        /* Konten Utama */
+        main {
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 960px; /* Lebar lebih luas */
+            background: #ffffff;
+            border-radius: 10px; /* Sudut membulat */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 40px; /* Jarak antar bagian */
+            padding: 20px;
+            border-bottom: 1px solid #eceff1; /* Garis pemisah antar section */
+        }
+
+        section:last-child {
+            border-bottom: none; /* Hapus garis di section terakhir */
+        }
+
+        h2, h3 {
+            font-family: 'Merriweather', serif;
+            color: #0056b3;
+            margin-bottom: 15px;
+            border-left: 5px solid #007bff; /* Garis biru di samping judul */
+            padding-left: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: disc;
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #0056b3; /* Penekanan pada teks penting */
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* Kontainer Video YouTube */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Rasio aspek 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-top: 40px; /* Jarak dari konten di atasnya */
+            border-radius: 8px; /* Sudut membulat pada video */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Bayangan untuk video */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #34495e; /* Warna gelap untuk footer */
+            color: #ecf0f1;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                flex-direction: column; /* Tumpuk menu di layar kecil */
+                gap: 10px; /* Jarak antar item menu */
+            }
+
+            nav ul li {
+                margin: 0;
+            }
+
+            main {
+                margin: 20px auto;
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Artikel Ilmiah Ringan: Lembaga Keuangan Syariah (Perbankan)</h1>
+        <nav>
+            <ul>
+                <li><a href="#pendahuluan">Pendahuluan</a></li>
+                <li><a href="#konsep-dasar">Konsep Dasar</a></li>
+                <li><a href="#studi-kasus">Studi Kasus</a></li>
+                <li><a href="#referensi">Referensi</a></li>
+                <li><a href="#video-penjelasan">Video Penjelasan</a></li> </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="pendahuluan">
+            <h2>Pendahuluan</h2>
+            <p>Selamat datang di situs artikel ilmiah ringan kami yang membahas dunia <strong>Lembaga Keuangan Syariah (LKS)</strong>, khususnya dalam sektor <strong>perbankan</strong>. Dalam beberapa dekade terakhir, keuangan syariah telah tumbuh pesat dan menjadi alternatif menarik bagi sistem keuangan konvensional. Prinsip-prinsip Islam yang melandasi operasional LKS menjunjung tinggi keadilan, transparansi, dan keberlanjutan, serta menghindari praktik-praktik yang dilarang seperti riba (bunga), gharar (ketidakpastian berlebihan), dan maysir (judi).</p>
+            <p>Artikel ini akan memberikan gambaran umum tentang konsep dasar perbankan syariah, produk-produk utama yang ditawarkan, serta bagaimana prinsip syariah diterapkan dalam operasionalnya. Kami juga akan menyertakan studi kasus dari sektor keuangan non-perbankan syariah untuk memberikan perspektif yang lebih luas mengenai penerapan prinsip-prinsip syariah dalam berbagai jenis lembaga keuangan.</p>
+        </section>
+
+        <section id="konsep-dasar">
+            <h2>Konsep Dasar Perbankan Syariah</h2>
+            <p>Perbankan syariah beroperasi berdasarkan prinsip-prinsip syariah Islam yang bersumber dari Al-Qur'an dan Sunnah. Beberapa prinsip utamanya meliputi:</p>
+            <ul>
+                <li><strong>Bebas Riba (Bunga):</strong> Semua transaksi harus bebas dari unsur bunga. Sebagai gantinya, perbankan syariah menggunakan skema bagi hasil (profit sharing), jual beli (markup), atau sewa (leasing).</li>
+                <li><strong>Pembagian Risiko dan Keuntungan:</strong> Bank dan nasabah berbagi risiko dan keuntungan dalam suatu transaksi, bukan hanya sebatas hubungan debitur-kreditur.</li>
+                <li><strong>Aktivitas Ekonomi Halal:</strong> Bank hanya membiayai atau berinvestasi pada sektor-sektor usaha yang halal dan bermanfaat bagi masyarakat, menghindari industri seperti alkohol, perjudian, atau senjata.</li>
+                <li><strong>Akad yang Jelas:</strong> Setiap transaksi harus didasari oleh akad (kontrak) yang jelas, transparan, dan disepakati oleh kedua belah pihak.</li>
+            </ul>
+            <h3>Produk-Produk Perbankan Syariah</h3>
+            <p>Perbankan syariah menawarkan berbagai produk yang sejalan dengan prinsip syariah, di antaranya:</p>
+            <ul>
+                <li><strong>Murabahah (Jual Beli dengan Keuntungan):</strong> Bank membeli aset yang diinginkan nasabah, kemudian menjualnya kembali kepada nasabah dengan tambahan margin keuntungan yang disepakati.</li>
+                <li><strong>Musyarakah (Kerja Sama atau Kemitraan):</strong> Bank dan nasabah membentuk kemitraan untuk suatu proyek atau usaha, dengan berbagi keuntungan dan kerugian sesuai porsi modal yang disepakati.</li>
+                <li><strong>Mudharabah (Bagi Hasil):</strong> Bank (sebagai pemilik modal/rabbul mal) menyediakan dana kepada nasabah (sebagai pengelola/mudharib) untuk suatu usaha. Keuntungan dibagi berdasarkan nisbah yang disepakati, sedangkan kerugian ditanggung oleh bank kecuali jika ada kelalaian dari nasabah.</li>
+                <li><strong>Ijarah (Sewa):</strong> Bank menyewakan suatu aset kepada nasabah untuk periode tertentu dengan biaya sewa yang disepakati.</li>
+                <li><strong>Qardh (Pinjaman Tanpa Bunga):</strong> Pinjaman sosial yang diberikan tanpa imbalan bunga, hanya wajib mengembalikan pokok pinjaman.</li>
+            </ul>
+        </section>
+
+        <section id="studi-kasus">
+            <h2>Studi Kasus: Lembaga Keuangan Non-Perbankan Syariah</h2>
+            <p>Untuk memberikan gambaran yang lebih komprehensif tentang penerapan prinsip syariah, mari kita lihat contoh di luar sektor perbankan.</p>
+            <h3>Studi Kasus: Lembaga Amil Zakat Nasional (LAZNAS)</h3>
+            <p><strong>Lembaga Amil Zakat Nasional (LAZNAS)</strong> seperti <strong>Badan Amil Zakat Nasional (BAZNAS)</strong> atau <strong>Dompet Dhuafa</strong> adalah contoh lembaga keuangan non-perbankan syariah yang bergerak di bidang filantropi Islam. Meskipun bukan bank, operasional mereka sangat kental dengan prinsip syariah:</p>
+            <ul>
+                <li><strong>Pengumpulan Dana Syariah:</strong> Mereka mengumpulkan dana dari masyarakat dalam bentuk zakat, infak, sedekah, dan wakaf – semua merupakan instrumen keuangan syariah yang disyariatkan.</li>
+                <li><strong>Distribusi Dana Sesuai Syariah:</strong> Dana yang terkumpul didistribusikan kepada delapan golongan penerima zakat (asnaf) yang telah ditentukan dalam Al-Qur'an (QS. At-Taubah: 60), serta untuk program-program sosial dan pemberdayaan masyarakat yang sesuai dengan kaidah syariah.</li>
+                <li><strong>Tata Kelola Syariah:</strong> Pengelolaan dan pelaporan keuangan mereka transparan dan diawasi oleh Dewan Pengawas Syariah (DPS) untuk memastikan kepatuhan terhadap prinsip-prinsip syariah.</li>
+                <li><strong>Dampak Sosial:</strong> Fokus utama mereka bukan mencari keuntungan finansial, melainkan menciptakan dampak sosial positif, mengurangi kemiskinan, dan meningkatkan kesejahteraan umat.</li>
+            </ul>
+            <p>Studi kasus LAZNAS menunjukkan bagaimana prinsip-prinsip syariah seperti keadilan, tolong-menolong, dan distribusi kekayaan dapat diterapkan di luar konteks perbankan untuk mencapai tujuan sosial dan ekonomi yang lebih luas.</p>
+        </section>
+
+        <section id="referensi">
+            <h2>Referensi</h2>
+            <ul>
+                <li>Antonio, M. S. (2001). <em>Bank Syariah: Dari Teori ke Praktik</em>. Gema Insani Press.</li>
+                <li>Ascarya. (2012). <em>Bank Syariah: Perbankan dan Keuangan Syariah</em>. RajaGrafindo Persada.</li>
+                <li>Otoritas Jasa Keuangan (OJK). (n.d.). <em>Statistik Perbankan Syariah</em>. Diakses dari <a href="https://www.ojk.go.id/" target="_blank">https://www.ojk.go.id/</a> (harap sesuaikan dengan link statistik terbaru OJK jika ada).</li>
+                <li>Undang-Undang Republik Indonesia Nomor 21 Tahun 2008 tentang Perbankan Syariah.</li>
+                <li>Website Resmi BAZNAS/Dompet Dhuafa (untuk informasi lebih lanjut mengenai studi kasus).</li>
+            </ul>
+        </section>
+
+        <section id="video-penjelasan">
+            <h2>Tonton Video Penjelasan Lebih Lanjut! 📺</h2>
+            <p>Link Video Kelompok Untuk TUgas Akhir UAS https://youtube.com/shorts/wlkH8RreUBY?si=x1xyFgxz48CtZq5E</p>
+            <div class="video-container">
+                <iframe src="https://youtube.com/shorts/wlkH8RreUBY?si=x1xyFgxz48CtZq5E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p style="text-align: center; font-style: italic; margin-top: 15px;">(Ganti YOUR_VIDEO_ID di kode dengan ID video YouTube yang relevan.)</p>
+        </section>
+        <a href="index.html"
+           class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded transition duration-300">
+          Back Awal ->
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Artikel Ilmiah Ringan. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            navLinks.forEach(link => {
+                link.addEventListener('mouseover', () => {
+                    link.style.textDecoration = 'underline';
+                    link.style.transform = 'translateY(-3px)'; // Efek sedikit naik
+                });
+
+                link.addEventListener('mouseout', () => {
+                    link.style.textDecoration = 'none';
+                    link.style.transform = 'translateY(0)';
+                });
+
+                // Smooth scroll saat klik navigasi
+                link.addEventListener('click', function(e) {
+                    e.preventDefault(); // Mencegah perilaku default link
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - 70, // Sesuaikan offset jika ada fixed header
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Tambahkan sedikit efek fade-in pada section saat di-scroll
+            const sections = document.querySelectorAll('section');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1 // Ketika 10% dari section terlihat
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target); // Berhenti mengamati setelah fade-in
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.observe(section);
+            });
+
+            console.log("Website artikel ilmiah ringan siap dengan video YouTube!");
+        });
+    </script>
+</body>
+</html>

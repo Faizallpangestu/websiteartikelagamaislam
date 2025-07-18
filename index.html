@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perjalanan Rasulullah SAW</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    #background {
+      background-size: cover;
+      background-position: center;
+      transition: background-image 1s ease-in-out;
+      z-index: -10;
+    }
+  </style>
+</head>
+<body class="relative bg-gray-100 text-gray-800">
+
+  <!-- Background Slideshow -->
+  <div id="background" class="fixed inset-0"></div>
+  <div class="fixed inset-0 bg-black bg-opacity-50 z-0"></div>
+
+  <!-- Header -->
+  <header class="relative z-10 bg-black-600 bg-opacity-90 text-white text-center py-6 shadow-md">      
+    <h1 class="text-3xl font-bold">Perjalanan Rasulullah SAW</h1>
+    <p class="text-sm mt-2">Kisah singkat perjalanan hidup Nabi Muhammad SAW</p>
+
+    <!-- Video -->
+    <div class="mt-4 flex justify-center bg-black py-4">
+        <iframe
+          class="w-80 h-44 rounded-xl shadow-lg"
+          src="https://www.youtube.com/embed/lVwksp-ITpM?autoplay=1&mute=1&loop=1&playlist=lVwksp-ITpM&controls=0&modestbranding=1&rel=0&showinfo=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
+      
+      
+  </header>
+
+  <!-- Navigasi -->
+  <nav class="relative z-10 flex justify-center gap-4 my-6">
+    <button onclick="scrollToSection('kelahiran')" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded">Kelahiran</button>
+    <button onclick="scrollToSection('kenabian')" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded">Kenabian</button>
+    <button onclick="scrollToSection('isra')" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded">Isra' Mi'raj</button>
+    <button onclick="scrollToSection('hijrah')" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded">Hijrah</button>
+  </nav>
+
+  <!-- Konten -->
+  <main class="relative z-10 max-w-4xl mx-auto px-4 space-y-16 pb-16">
+    
+    <!-- Kelahiran -->
+    <section id="kelahiran" class="bg-white bg-opacity-90 p-6 rounded-xl shadow-md">
+      <h2 class="text-2xl font-semibold mb-3 text-green-700">Kelahiran</h2>
+      <p>
+        Rasulullah SAW lahir pada tanggal 12 Rabiul Awal di Kota Mekah pada tahun Gajah. Beliau berasal dari Bani Hasyim, suku Quraisy.
+      </p>
+    </section>
+
+    <!-- Kenabian -->
+    <section id="kenabian" class="bg-white bg-opacity-90 p-6 rounded-xl shadow-md">
+      <h2 class="text-2xl font-semibold mb-3 text-green-700">Kenabian</h2>
+      <p>
+        Pada usia 40 tahun, Nabi Muhammad SAW menerima wahyu pertama dari Allah SWT melalui Malaikat Jibril saat beliau berada di Gua Hira.
+      </p>
+    </section>
+
+    <!-- Isra' Mi'raj -->
+    <section id="isra" class="bg-white bg-opacity-90 p-6 rounded-xl shadow-md">
+      <h2 class="text-2xl font-semibold mb-3 text-green-700">Isra' dan Mi'raj</h2>
+      <p>
+        Perjalanan malam yang luar biasa dari Masjidil Haram ke Masjidil Aqsa (Isra'), lalu naik ke langit (Mi'raj), di mana Rasulullah SAW menerima perintah salat.
+      </p>
+    </section>
+
+    <!-- Hijrah -->
+    <section id="hijrah" class="bg-white bg-opacity-90 p-6 rounded-xl shadow-md">
+      <h2 class="text-2xl font-semibold mb-3 text-green-700">Hijrah ke Madinah</h2>
+      <p>
+        Rasulullah SAW hijrah dari Mekah ke Madinah untuk menyelamatkan umat Islam dari penindasan. Peristiwa ini menjadi awal penanggalan Hijriyah.
+      </p>
+    </section>
+
+    <!-- Pemasaran dalam Islam -->
+<section id="pemasaran" class="bg-white bg-opacity-90 p-6 rounded-xl shadow-md">
+    <h2 class="text-2xl font-semibold mb-3 text-green-700">Pemasaran dalam Islam</h2>
+    <a href="pemasaranislam.html"
+   class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded transition duration-300">
+   Baca selengkapnya tentang Pemasaran Islam
+</a>
+ 
+     
+    </div>
+  </section>
+  
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative z-10 bg-green-600 text-white text-center py-4 mt-8">
+    <p>&copy; 2025 - Kisah Rasulullah SAW oleh Muhammad Faizal</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Ganti background secara berkala
+    const backgrounds = [
+    'https://i.pinimg.com/736x/ba/db/86/badb86b423fe1d1c14497449c2276e7a.jpg',
+    'https://i.pinimg.com/736x/59/9e/90/599e90c200d8f7ff23a087f3cc90fd71.jpg',
+    'https://i.pinimg.com/736x/74/11/a4/7411a4ef121cb63b17581ab44a3e90e2.jpg',
+    'https://i.pinimg.com/736x/03/43/07/034307743ec3106ffe8e831637c60500.jpg'
+    ];
+
+    let index = 0;
+    const backgroundDiv = document.getElementById('background');
+
+    function changeBackground() {
+      backgroundDiv.style.backgroundImage = `url('${backgrounds[index]}')`;
+      index = (index + 1) % backgrounds.length;
+    }
+
+    changeBackground(); // tampilkan pertama
+    setInterval(changeBackground, 5000); // ganti setiap 5 detik
+  </script>
+</body>
+</html>
